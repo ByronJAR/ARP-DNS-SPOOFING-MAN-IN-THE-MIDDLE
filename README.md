@@ -1,8 +1,10 @@
 # ARP-DNS SPOOFING (MAN IN THE MIDDLE)
 
-![logo.png](ARP-DNS%20SPOOFING%20(MAN%20IN%20THE%20MIDDLE)%209903ed6f34284af080de079c1535ed03/logo.png)
+![logo](https://user-images.githubusercontent.com/129788399/230464170-da9b405d-46d1-4900-9065-e8385337b776.png)
 
-![mitmasdasdasd.png](ARP-DNS%20SPOOFING%20(MAN%20IN%20THE%20MIDDLE)%209903ed6f34284af080de079c1535ed03/mitmasdasdasd.png)
+
+![mitmasdasdasd](https://user-images.githubusercontent.com/129788399/230464092-4d89b9c5-0488-4a27-b454-24a794839f07.png)
+
 
 # ¿Qué es un ataque ARP Spoofing?
 
@@ -32,7 +34,7 @@ Cabe recalcar que esta prueba de concepto fue realizada en el sistema operativo 
     
     Esta tabla de puede observar en la siguiente imagen.
     
-    ![2.PNG](ARP-DNS%20SPOOFING%20(MAN%20IN%20THE%20MIDDLE)%209903ed6f34284af080de079c1535ed03/2.png)
+    ![2](https://user-images.githubusercontent.com/129788399/230464328-5b5bd831-edec-408e-ba9a-afb55872fce5.PNG)
     
 
 - En un ataque ARP spoofing hacia la gateway, el atacante envía paquetes ARP falsificados a los dispositivos de la red, haciéndoles creer que la dirección MAC del atacante es en realidad la dirección MAC de la gateway. De esta manera, todo el tráfico que se envía a través de la gateway pasa primero por el atacante, quien puede interceptarlo, modificarlo o redirigirlo según sus intereses.
@@ -53,7 +55,7 @@ Cabe recalcar que esta prueba de concepto fue realizada en el sistema operativo 
     
     Si nos intentamos loggear en la página mientras estamos sniffeando el tráfico en la red, bettercap captará las credenciales y nos las mostrará en pantalla.
     
-    ![3.PNG](ARP-DNS%20SPOOFING%20(MAN%20IN%20THE%20MIDDLE)%209903ed6f34284af080de079c1535ed03/3.png)
+    ![3](https://user-images.githubusercontent.com/129788399/230464330-12590884-5c32-435e-b021-3185bef139d9.PNG)
     
 
 # DNS SPOOFING
@@ -76,8 +78,8 @@ Aprovechándonos del ARP-SPOOFING, efectuaremos este ataque. Gracias a Bettercap
     ```bash
     arp -a
     ```
-    
-    ![Screenshot 2023-04-06 162623.png](ARP-DNS%20SPOOFING%20(MAN%20IN%20THE%20MIDDLE)%209903ed6f34284af080de079c1535ed03/Screenshot_2023-04-06_162623.png)
+    ![Screenshot 2023-04-06 162623](https://user-images.githubusercontent.com/129788399/230464747-281526a6-6dba-4d30-8a38-61f46dab8a45.png)
+
     
     **Como podemos ver, logramos cambiar la tabla ARP de la PC víctima y poseemos la misma dirección MAC del Gateway.**
     
@@ -97,6 +99,8 @@ Aprovechándonos del ARP-SPOOFING, efectuaremos este ataque. Gracias a Bettercap
     dns.spoof on
     ```
     
-    En mi caso realicé el DNS SPOOFING contra el nombre de dominio [ubuntu.com](http://ubuntu.com). A continuación se muestra que pasa si ingreso al nombre de dominio ubuntu.com en la máquina víctima.
+    ![4](https://user-images.githubusercontent.com/129788399/230464331-3cfaa9e7-8092-44f8-bec2-9b487d0dc10e.PNG)
     
-    ![Screenshot 2023-04-06 163430.png](ARP-DNS%20SPOOFING%20(MAN%20IN%20THE%20MIDDLE)%209903ed6f34284af080de079c1535ed03/Screenshot_2023-04-06_163430.png)
+    En mi caso realicé el DNS SPOOFING contra el nombre de dominio [ubuntu.com](http://ubuntu.com). A continuación se muestra que pasa si ingreso al nombre de dominio ubuntu.com en la máquina víctima.
+    <img width="958" alt="Screenshot 2023-04-06 163430" src="https://user-images.githubusercontent.com/129788399/230464805-65cc988f-c4e2-4473-b81b-2d0bf138a01f.png">
+
